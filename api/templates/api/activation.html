@@ -1,0 +1,11 @@
+{% block subject %}
+【Marese】本登録のご案内
+{% endblock subject %}
+
+{% block text_body %}
+ご利用頂き、誠にありがとうございます。
+
+以下リンクから本登録を完了してください。
+{{host}}register/activate?uid={{uid}}&token={{token}}
+
+{% endblock text_body %}

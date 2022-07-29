@@ -1,0 +1,11 @@
+{% block subject %}
+【Marese】メールアドレス変更
+{% endblock subject %}
+
+{% block text_body %}
+{{ name }}さま
+ご利用頂き、誠にありがとうございます!
+
+以下リンクから本登録を完了してください。
+{{host}}register/reset-email/confirm?uid={{uid}}&token={{token}}
+{% endblock text_body %}
